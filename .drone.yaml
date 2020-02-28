@@ -1,0 +1,6 @@
+build:
+  image: centos:7
+  commands:
+    - yum install -y epel-release
+    - yum install -y nodejs npm
+    - npm -d install

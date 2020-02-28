@@ -1,1 +1,6 @@
-# node js application with simple automation with AWS DevOps
+# node-hello
+A simple hello world node js application
+
+
+# Running the app
+>npm start

@@ -5,3 +5,12 @@ build:
     - yum install -y epel-release
     - yum install -y nodejs npm
     - npm -d install
+
+publish:
+    image: plugins/docker
+    insecure: true
+    registry: docker-test
+    repo: docker-test
+    dockerfile: Docke:rfile
+    secrets: [ docker_username, docker_password ]
+    tags: [ latest, 1.1 ]
